@@ -20,10 +20,10 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'rake',       '~> 13.0.1'
 
-  spec.add_dependency 'activesupport',          '>= 5'
+  spec.add_dependency 'activesupport',          '>= 7.2.3.1', '< 8'
   spec.add_dependency 'attr_extras',            '~> 7.1.0'
   spec.add_dependency 'colorize'
   spec.add_dependency 'stringex', '~> 2.8.5'
 
-  spec.required_ruby_version = ['>= 3.0']
+  spec.required_ruby_version = ['>= 3.2']
 end
