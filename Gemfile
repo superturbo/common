@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 platform :ruby do
-  ruby File.read('.ruby-version').strip
+  ruby File.read('.ruby-version')[/\d+(?:\.\d+)+/]
 end
 
 # Specify your gem's dependencies in locomotivecms_common.gemspec
