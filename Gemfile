@@ -9,9 +9,11 @@ end
 # Specify your gem's dependencies in locomotivecms_common.gemspec
 gemspec
 
-gem 'rubocop'
+group :development do
+  gem 'rubocop', '>= 1.75', require: false
+end
 
 group :test do
   gem 'coveralls', '~> 0.8.21', require: false
-  gem 'rspec', '~> 3.12.0'
+  gem 'rspec', '~> 3.13'
 end
